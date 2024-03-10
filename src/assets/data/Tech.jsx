@@ -57,9 +57,9 @@ export const Tech = [
     },
     {
         id: 8,
-        title: 'Express',
-        icon: <SiExpress />,
-        link: "https://expressjs.com/"
+        title: 'Vite',
+        icon: <SiVite />,
+        link: "https://vitejs.dev/"
     },
     {
         id: 9,
@@ -69,20 +69,21 @@ export const Tech = [
     },
     {
         id: 10,
-        title: 'NodeJs',
-        icon: <FaNodeJs />,
-        link: "https://nodejs.org/en"
-    },
-    {
-        id: 11,
         title: 'Mongoose',
         icon: <SiMongoose />,
         link: "https://mongoosejs.com/"
     },
     {
         id: 11,
-        title: 'Vite',
-        icon: <SiVite />,
-        link: "https://vitejs.dev/"
+        title: 'Express',
+        icon: <SiExpress />,
+        link: "https://expressjs.com/"
+    },
+
+    {
+        id: 12,
+        title: 'NodeJs',
+        icon: <FaNodeJs />,
+        link: "https://nodejs.org/en"
     },
 ]

@@ -2,6 +2,9 @@ import './About.css';
 import { Navlinks } from '../../assets/data/NavLinks';
 import Work from '../../Components/Work/Work';
 import Skills from '../../Components/Skills/Skills';
+import Resume from '../../Components/Resume/Resume';
+import Contact from '../../Components/Contact/Contact';
+
 const About = () => {
     return (
         <main className=''>
@@ -15,10 +18,10 @@ const About = () => {
                 <Work />
             </article>
             <article className='resume-container'>
-                <h2 id={Navlinks[3].title} className='mt-48'>{Navlinks[3].title}</h2>
+                <Resume />
             </article>
             <article className='contact-container'>
-                <h2 id={Navlinks[4].title} className='mt-48'>{Navlinks[4].title}</h2>
+                <Contact />
             </article>
         </main>
     )
