@@ -1,15 +1,15 @@
 import './About.css';
 import { Navlinks } from '../../assets/data/NavLinks';
-import Work from '../../Components/Screenshots/Work';
-
+import Work from '../../Components/Work/Work';
+import Skills from '../../Components/Skills/Skills';
 const About = () => {
     return (
         <main className=''>
             <article id={Navlinks[0].title} className='about-container'>
                 <h2 className='mt-48'>{Navlinks[0].title}</h2>
             </article>
-            <article id={Navlinks[1].title} className='skills-container'>
-                <h2 className='mt-48'>{Navlinks[1].title}</h2>
+            <article className='skills-container'>
+                <Skills />
             </article>
             <article className='work-container'>
                 <Work />

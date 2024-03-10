@@ -77,9 +77,6 @@ const Work = () => {
                     </article>
                 </main>
             </div>
-
-
-
             {/* large */}
             <h2 className='hidden lg:block text-center'>Freelance Projects</h2>
             <main className='hidden lg:flex text-sm justify-evenly'>
