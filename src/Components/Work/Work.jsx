@@ -1,6 +1,7 @@
 import './Work.css';
 import { FreeScreenshots, BootScreenshots } from '../../assets/data/Screenshots';
 import { FaGithub } from "react-icons/fa";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Work = () => {
     return (
@@ -17,7 +18,7 @@ const Work = () => {
                             <section key={item.id}>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
-                                    <img src={item.image} alt={item.title} className='w-44' />
+                                    <LazyLoadImage src={item.image} alt={item.title} className='w-44' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
@@ -32,7 +33,7 @@ const Work = () => {
                             <section key={item.id}>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
-                                    <img src={item.image} alt={item.title} className='w-44' />
+                                    <LazyLoadImage src={item.image} alt={item.title} className='w-44' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
@@ -50,7 +51,7 @@ const Work = () => {
                             <section key={item.id}>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
-                                    <img src={item.image} alt={item.title} className='w-44' />
+                                    <LazyLoadImage src={item.image} alt={item.title} className='w-44' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
@@ -65,7 +66,7 @@ const Work = () => {
                             <section key={item.id}>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
-                                    <img src={item.image} alt={item.title} className='w-44' />
+                                    <LazyLoadImage src={item.image} alt={item.title} className='w-44' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
@@ -84,7 +85,7 @@ const Work = () => {
                     <article key={item.id} className='work-container flex flex-col justify-center items-center'>
                         <h2>{item.title}</h2>
                         <a href={item.siteLink} target='__blank' className=''>
-                            <img src={item.image} alt={item.title} className='w-64' />
+                            <LazyLoadImage src={item.image} alt={item.title} className='w-64' />
                         </a>
                         <section className=''>
                             <a href={item.gitLink} target='__blank'>
@@ -100,7 +101,7 @@ const Work = () => {
                     <article key={item.id} className='work-container flex flex-col justify-center items-center'>
                         <h2>{item.title}</h2>
                         <a href={item.siteLink} target='__blank' className=''>
-                            <img src={item.image} alt={item.title} className='w-64' />
+                            <LazyLoadImage src={item.image} alt={item.title} className='w-64' />
                         </a>
                         <section className=''>
                             <a href={item.gitLink} target='__blank'>

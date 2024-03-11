@@ -11,11 +11,11 @@ const About = () => {
             <article id={Navlinks[0].title} className='about-container'>
                 <h2 className='mt-48'>{Navlinks[0].title}</h2>
             </article>
-            <article className='skills-container'>
-                <Skills />
-            </article>
             <article className='work-container'>
                 <Work />
+            </article>
+            <article className='skills-container'>
+                <Skills />
             </article>
             <article className='resume-container'>
                 <Resume />

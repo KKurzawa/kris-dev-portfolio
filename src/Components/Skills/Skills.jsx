@@ -3,9 +3,9 @@ import { Tech } from '../../assets/data/Tech.jsx'
 
 const Skills = () => {
     return (
-        <>
+        <div id='Skills'>
             {/* small */}
-            <main id="Skills" className='md:hidden flex flex-col'>
+            <main className='md:hidden flex flex-col'>
                 <h2 className='text-center'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap'>
                     {Tech.map((item) => item.id < 4 && (
@@ -50,7 +50,7 @@ const Skills = () => {
 
             </main>
             {/* md and lg */}
-            <main id="Skills" className='hidden md:flex flex-col'>
+            <main className='hidden md:flex flex-col'>
                 <h2 className='text-center'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap'>
                     {Tech.map((item) => item.id < 7 && (
@@ -74,7 +74,7 @@ const Skills = () => {
                 </section>
 
             </main>
-        </>
+        </div>
     )
 }
 

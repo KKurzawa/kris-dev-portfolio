@@ -6,13 +6,13 @@ export const Navlinks = [
     },
     {
         id: 2,
-        title: 'Skills',
-        link: '#Skills'
+        title: 'Work',
+        link: '#Work'
     },
     {
         id: 3,
-        title: 'Work',
-        link: '#Work'
+        title: 'Skills',
+        link: '#Skills'
     },
     {
         id: 4,
