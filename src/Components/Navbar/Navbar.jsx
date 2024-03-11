@@ -3,7 +3,7 @@ import { Navlinks } from '../../assets/data/NavLinks';
 
 const Navbar = () => {
     return (
-        <main>
+        <main id='navBar'>
             <nav>
                 <ol className='flex justify-evenly'>
                     {Navlinks.map((item) => (
