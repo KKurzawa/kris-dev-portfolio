@@ -7,7 +7,7 @@ import Contact from '../../Components/Contact/Contact';
 
 const About = () => {
     return (
-        <main className=''>
+        <main className='main-container'>
             <article id={Navlinks[0].title} className='about-container'>
                 <h2 className='mt-48'>{Navlinks[0].title}</h2>
             </article>

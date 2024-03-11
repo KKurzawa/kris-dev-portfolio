@@ -1,0 +1,21 @@
+.footer {
+	-webkit-animation: footer 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: footer 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes footer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes footer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
