@@ -6,7 +6,7 @@ const Skills = () => {
         <div id='Skills'>
             {/* small */}
             <main className='md:hidden flex flex-col'>
-                <h2 className='text-center'>Tech I Use</h2>
+                <h2 className='text-center text-3xl font-bold'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap'>
                     {Tech.map((item) => item.id < 4 && (
                         <article key={item.id} className='text-center'>
@@ -51,7 +51,7 @@ const Skills = () => {
             </main>
             {/* md and lg */}
             <main className='hidden md:flex flex-col'>
-                <h2 className='text-center'>Tech I Use</h2>
+                <h2 className='text-center text-3xl font-bold'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap'>
                     {Tech.map((item) => item.id < 7 && (
                         <article key={item.id} className='text-center'>

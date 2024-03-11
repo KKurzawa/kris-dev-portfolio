@@ -17,14 +17,14 @@ export const FreeScreenshots = [
     },
     {
         id: 2,
-        title: 'Ani Difranco Transcriptions',
+        title: 'Ani Transcriptions',
         image: Ani,
         gitLink: 'https://github.com/KKurzawa/Ani-Difranco-Transcriptions',
         siteLink: 'https://anidifrancotranscriptions.vercel.app/'
     },
     {
         id: 3,
-        title: 'Revival: A Tribute to The Allman Bros',
+        title: 'Revival: Allman Bros Tribute',
         image: Revival,
         gitLink: 'https://github.com/KKurzawa/Revival-Site',
         siteLink: 'https://revivalbanddetroit.vercel.app/'

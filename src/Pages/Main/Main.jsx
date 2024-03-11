@@ -1,4 +1,4 @@
-import './About.css';
+import './Main.css';
 import { Navlinks } from '../../assets/data/NavLinks';
 import Work from '../../Components/Work/Work';
 import Skills from '../../Components/Skills/Skills';
