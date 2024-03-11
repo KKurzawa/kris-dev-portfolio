@@ -51,8 +51,8 @@ const Contact = () => {
         <main id='Contact' className='flex flex-col items-center'>
             <h2 className="text-3xl font-bold lg:text-3xl mt-5">Drop Me a Line</h2>
             <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly'>
-                <LazyLoadImage src={KrisKurzawaPic} className='kris mt-2  w-[65%] h-[65%] lg:w-[50%] lg:h-[50%] mx-10' />
-                <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center mt-2 mx-10 w-[65%] h-[65%] lg:w-[50%] lg:h-[50%]'>
+                <LazyLoadImage src={KrisKurzawaPic} className='kris mt-2  w-[65%] h-[65%] lg:w-[50%] lg:h-[50%] m-5 lg:mx-10' />
+                <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center mt-2 m-5 lg:mx-10 w-[65%] h-[65%] lg:w-[50%] lg:h-[50%]'>
                     <input
                         className='input'
                         type='text'
