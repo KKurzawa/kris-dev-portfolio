@@ -9,15 +9,15 @@
 }
 
 .fade-out{
-  -webkit-animation: fade-out 1s ease-out 4s both;
-  animation: fade-out 1s ease-out 4s both;
+  -webkit-animation: fade-out 1s ease-out 5s both;
+  animation: fade-out 1s ease-out 5s both;
   height:auto;
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 /* 
 @-webkit-keyframes fade-in {
@@ -80,7 +80,7 @@
      width: 0;      
   }
   to {
-    width: 30rem;
+    width: 40rem;
   }
   }
 
@@ -89,7 +89,7 @@
        width: 0;      
     }
     to {
-      width: 30rem;
+      width: 40rem;
     }
     }
   /* @keyframes logo-spin {
