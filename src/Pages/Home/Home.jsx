@@ -1,15 +1,15 @@
-import './Main.css';
-import { Navlinks } from '../../assets/data/NavLinks';
+import './Home.css';
 import Work from '../../Components/Work/Work';
 import Skills from '../../Components/Skills/Skills';
 import Resume from '../../Components/Resume/Resume';
 import Contact from '../../Components/Contact/Contact';
+import About from '../../Components/About/About';
 
-const About = () => {
+const Home = () => {
     return (
         <main className='main-container'>
-            <article id={Navlinks[0].title} className='about-container'>
-                <h2 className='mt-48'>{Navlinks[0].title}</h2>
+            <article className='about-container'>
+                <About />
             </article>
             <article className='work-container'>
                 <Work />
@@ -17,14 +17,14 @@ const About = () => {
             <article className='skills-container'>
                 <Skills />
             </article>
-            <article className='resume-container'>
-                <Resume />
-            </article>
             <article className='contact-container'>
                 <Contact />
             </article>
-        </main>
+            <article className='resume-container'>
+                <Resume />
+            </article>
+        </main >
     )
 }
 
-export default About
+export default Home

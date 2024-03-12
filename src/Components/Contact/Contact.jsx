@@ -100,7 +100,6 @@ const Contact = () => {
                     <i key={item.id} className='text-xl p-3 lg:text-5xl lg:p-7'><a href={item.link} target='__blank'>{item.symbol}</a></i>
                 ))}
             </article>
-            <h2 className='topLink'><a href='#navBar'>to the top</a></h2>
         </main>
     )
 }
