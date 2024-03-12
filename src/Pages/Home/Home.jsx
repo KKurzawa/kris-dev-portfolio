@@ -17,11 +17,11 @@ const Home = () => {
             <article className='skills-container'>
                 <Skills />
             </article>
-            <article className='contact-container'>
-                <Contact />
-            </article>
             <article className='resume-container'>
                 <Resume />
+            </article>
+            <article className='contact-container'>
+                <Contact />
             </article>
         </main >
     )
