@@ -19,23 +19,6 @@
   align-items: center;
   align-content: center;
 }
-/* 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 
 @-webkit-keyframes logo-text {
   0% {
@@ -54,27 +37,6 @@
   }
 }
 
-/* @-webkit-keyframes logo-spin {
-0% {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-100% {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-}
-}
-@keyframes logo-spin {
-0% {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-100% {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-}
-} */
-
 @keyframes logo {
   from {
      width: 0;      
@@ -82,26 +44,17 @@
   to {
     width: 40rem;
   }
-  }
+}
 
-  @keyframes logo {
-    from {
-       width: 0;      
-    }
-    to {
-      width: 40rem;
-    }
-    }
-  /* @keyframes logo-spin {
-  0% {
-    -webkit-transform: width: 0;
-            transform: width: 0;
+@keyframes logo {
+  from {
+      width: 0;      
   }
-  100% {
-    -webkit-transform: width: 20px;
-            transform: width: 20px;
+   to {
+    width: 40rem;
   }
-  } */
+}
+
   
 
 @-webkit-keyframes fade-out {
@@ -122,12 +75,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .logo {
+    height:auto;
+    animation: logo 4s ease-in both;
+}
   @keyframes logo {
     from {
        width: 0;      
     }
     to {
-      width: 60rem;
+      width: 100rem;
     }
     }
   
@@ -136,7 +93,7 @@
          width: 0;      
       }
       to {
-        width: 60rem;
+        width: 100rem;
       }
       }
 }
