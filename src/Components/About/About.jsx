@@ -2,7 +2,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <main className='flex justify-evenly w-full h-auto'>
+        <main className='flex flex-col md:flex-row justify-evenly w-full h-auto'>
             <header className='flex-col w-1/2 m-16'>
                 <h2 className='text-3xl text-start'>Hello! My name is</h2>
                 <h1 className='text-7xl text-start'>Kris Kurzawa.</h1>
