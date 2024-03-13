@@ -7,7 +7,7 @@ import About from '../../Components/About/About';
 
 const Home = () => {
     return (
-        <main className='main-container'>
+        <main className='main-container w-full'>
             <article className='about-container'>
                 <About />
             </article>
