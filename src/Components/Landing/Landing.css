@@ -1,3 +1,4 @@
+/* md and lg  */
 .logo {
     height:auto;
     animation: logo 4s ease-in both;
@@ -96,4 +97,106 @@
         width: 100rem;
       }
       }
+}
+
+/* sm */
+
+.sm-logo {
+  height:auto;
+  animation: logo 8s ease-in both;
+}
+
+.sm-logo-text {
+-webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
+
+.sm-fade-out{
+-webkit-animation: fade-out 1s ease-out 4s both;
+animation: fade-out 1s ease-out 4s both;
+height:auto;
+width: 80vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+@-webkit-keyframes sm-logo-text {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes sm-logo-text {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+@keyframes sm-logo {
+from {
+   width: 0;      
+}
+to {
+  width: 80rem;
+}
+}
+
+@keyframes sm-logo {
+from {
+    width: 0;      
+}
+ to {
+  width: 80rem;
+}
+}
+
+
+
+@-webkit-keyframes fade-out {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+@keyframes fade-out {
+0% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.logo {
+  height:auto;
+  animation: logo 4s ease-in both;
+}
+@keyframes logo {
+  from {
+     width: 0;      
+  }
+  to {
+    width: 100rem;
+  }
+  }
+
+  @keyframes logo {
+    from {
+       width: 0;      
+    }
+    to {
+      width: 100rem;
+    }
+    }
 }
