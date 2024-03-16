@@ -5,7 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Work = () => {
     return (
-        <>
+        <main className='bg-[#100607] text-[whitesmoke]'>
             <header id='Work' className='flex flex-col items-center'>
                 <h1 className='text-3xl font-bold'>Work</h1>
             </header>
@@ -79,8 +79,8 @@ const Work = () => {
                 </main>
             </div>
             {/* large */}
-            <h2 className='hidden lg:block text-center text-2xl'>Freelance Projects</h2>
-            <main className='hidden lg:flex text-sm justify-evenly'>
+            <h2 className='hidden lg:block text-center text-2xl pb-3'>Freelance Projects</h2>
+            <main className='hidden lg:flex text-sm justify-evenly pb-5'>
                 {FreeScreenshots.map((item) => (
                     <article key={item.id} className='work-container flex flex-col justify-center items-center'>
                         <h2>{item.title}</h2>
@@ -95,7 +95,7 @@ const Work = () => {
                     </article>
                 ))}
             </main>
-            <h2 className='hidden lg:block text-center text-2xl'>Bootcamp Projects</h2>
+            <h2 className='hidden lg:block text-center text-2xl pb-3'>Bootcamp Projects</h2>
             <main className='hidden lg:flex text-sm justify-evenly'>
                 {BootScreenshots.map((item) => (
                     <article key={item.id} className='work-container flex flex-col justify-center items-center'>
@@ -111,7 +111,7 @@ const Work = () => {
                     </article>
                 ))}
             </main>
-        </>
+        </main>
 
     )
 }

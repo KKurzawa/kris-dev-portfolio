@@ -3,7 +3,7 @@ import { Tech } from '../../assets/data/Tech.jsx'
 
 const Skills = () => {
     return (
-        <div id='Skills'>
+        <div id='Skills' className='bg-[#100607] text-[whitesmoke]'>
             {/* small */}
             <main className='md:hidden flex flex-col'>
                 <h2 className='text-center text-3xl font-bold'>Tech I Use</h2>

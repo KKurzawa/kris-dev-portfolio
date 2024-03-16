@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { validateEmail } from '../../Utils/Helpers';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import KrisKurzawaPic from '/KrisKurzawa6.png';
-import { icons } from '../../assets/data/SMIcons';
+// import { icons } from '../../assets/data/SMIcons';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -49,58 +49,61 @@ const Contact = () => {
 
     return (
         <main id='Contact' className='flex flex-col items-center'>
-            <h2 className="text-3xl font-bold lg:text-3xl mt-5">Drop Me a Line</h2>
-            <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly'>
-                <LazyLoadImage src={KrisKurzawaPic} className='kris mt-2  w-[65%] h-[65%] lg:w-[50%] lg:h-[50%] m-5 lg:mx-10' />
-                <form onSubmit={handleSubmit} className='emailForm flex flex-col content-center mt-2 m-5 lg:mx-10 w-[65%] h-[65%] lg:w-[50%] lg:h-[50%]'>
-                    <input
-                        className='input'
-                        type='text'
-                        placeholder='Your Name'
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                    <input
-                        className='input'
-                        type='email'
-                        placeholder='Your Email'
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                    <input
-                        className='input'
-                        type='subject'
-                        placeholder='Subject'
-                        value={subject}
-                        onChange={(e) => setSubject(e.target.value)}
-                    />
-                    <textarea
-                        className='input'
-                        cols='30'
-                        rows='5'
-                        placeholder='Message'
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    >
-                    </textarea>
-                    <button className='submit-btn w-32 lg:w-32' type='submit'>Submit</button>
+            <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly h-[28rem]'>
+                <div className='bg-[#980D1C] w-[65%] h-[65%] lg:w-1/3 lg:h-[100%] flex flex-col justify-center items-center'>
+                    <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto' />
+                    <div className='flex justify-evenly p-2 w-full'>
+                        <button className='res-btn text-md'><a href='/KrisKurzawaResume.pdf' target='__blank'>View My Resume</a></button>
+                        <button className='res-btn text-md'><a href='/MSUCertificateofCompletion.pdf' target='__blank'>View My Certificate</a></button>
+                    </div>
+
+                </div>
+
+                <form onSubmit={handleSubmit} className='emailForm flex flex-col items-center lg:px-10 w-[65%] h-[65%] md:w-2/3 md:h-auto bg-[#eed29bb1]'>
+
+                    <article className='flex flex-col w-3/4 pt-10'>
+                        <h2 className="text-3xl font-bold lg:text-3xl text-[#100607] w-3/4">Drop Me A Line</h2>
+                        <input
+                            className='input'
+                            type='text'
+                            placeholder='Your Name'
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                        />
+                        <input
+                            className='input'
+                            type='email'
+                            placeholder='Your Email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <input
+                            className='input'
+                            type='subject'
+                            placeholder='Subject'
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                        />
+                        <textarea
+                            className='input'
+                            cols='30'
+                            rows='3'
+                            placeholder='Message'
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                        >
+                        </textarea>
+                        <button className='submit-btn w-32 lg:w-32' type='submit'>Submit</button>
+                    </article>
+
+
                     {errorMessage && (
                         <article>
                             <p className="error-tex text-center text-2xl lg:text-4xl mb-5">{errorMessage}</p>
                         </article>
                     )}
-                    <article className='flex flex-row justify-evenly'>
-                        <h2> <a href='mailto:kurzawa1@yahoo.com'>Email Me</a></h2>
-                        <h2><a href='tel:2485682806'>Call Me</a></h2>
-                    </article>
                 </form>
             </article>
-            <article className='flex'>
-                {icons.map((item) => (
-                    <i key={item.id} className='text-xl p-3 lg:text-5xl lg:p-7'><a href={item.link} target='__blank'>{item.symbol}</a></i>
-                ))}
-            </article>
-            <h2 className='topLink'><a href='#navbar'>to the top</a></h2>
         </main>
     )
 }

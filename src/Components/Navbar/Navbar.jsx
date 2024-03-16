@@ -3,12 +3,12 @@ import { Navlinks } from '../../assets/data/NavLinks';
 
 const Navbar = () => {
     return (
-        <main id='navbar'>
-            <nav>
-                <ol className='flex justify-evenly'>
+        <main id='navbar' className='bg-[#100607]'>
+            <nav className='h-10'>
+                <ol className='flex justify-evenly w-full h-full items-end'>
                     {Navlinks.map((item) => (
-                        <li key={item.id}>
-                            <a href={item.link}>
+                        <li key={item.id} className='text-[whitesmoke] '>
+                            <a href={item.link} className=''>
                                 {item.title}
                             </a>
                         </li>
