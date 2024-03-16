@@ -5,17 +5,17 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Work = () => {
     return (
-        <main className='work-main bg-[#100607] text-[whitesmoke] pt-10 pb-10'>
+        <main className='work-main bg-[#100607] pt-5 md:pt-10 pb-10'>
             <header id='Work' className='flex flex-col items-center'>
                 <h1 className='text-3xl font-bold text-[#eed29b]'>Work</h1>
             </header>
             <div>
                 {/* small and medium */}
-                <h2 className='lg:hidden text-center text-2xl text-[#980D1C]'>Freelance Projects</h2>
-                <main className='lg:hidden flex flex-row justify-evenly text-[.6rem]'>
-                    <article className='work-container text-center'>
+                <h2 className='lg:hidden text-center text-2xl text-[#eed29b] pb-1'>Freelance Projects</h2>
+                <main className='lg:hidden flex flex-row justify-evenly text-sm md:text-[.6rem] pb-5'>
+                    <article className='work-container text-center text-[#eed29b]'>
                         {FreeScreenshots.map((item, index) => index % 2 === 0 && (
-                            <section key={item.id}>
+                            <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='work-pics w-44' />
@@ -28,9 +28,9 @@ const Work = () => {
                             </section>
                         ))}
                     </article>
-                    <article className='work-container text-center'>
+                    <article className='work-container text-center text-[#eed29b]'>
                         {FreeScreenshots.map((item, index) => index % 2 !== 0 && (
-                            <section key={item.id}>
+                            <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='w-44 work-pics' />
@@ -44,11 +44,11 @@ const Work = () => {
                         ))}
                     </article>
                 </main>
-                <h2 className='lg:hidden text-center text-2xl'>Bootcamp Projects</h2>
-                <main className='lg:hidden flex flex-row justify-evenly text-[.6rem]'>
-                    <article className='work-container text-center'>
+                <h2 className='lg:hidden text-center text-2xl text-[#eed29b] pb-1'>Bootcamp Projects</h2>
+                <main className='lg:hidden flex flex-row justify-evenly text-sm md:text-[.6rem]'>
+                    <article className='work-container text-center text-[#eed29b]'>
                         {BootScreenshots.map((item, index) => index % 2 === 0 && (
-                            <section key={item.id}>
+                            <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='w-44 work-pics' />
@@ -61,9 +61,9 @@ const Work = () => {
                             </section>
                         ))}
                     </article>
-                    <article className='work-container text-center'>
+                    <article className='work-container text-center text-[#eed29b]'>
                         {BootScreenshots.map((item, index) => index % 2 !== 0 && (
-                            <section key={item.id}>
+                            <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
                                 <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='w-44 work-pics' />

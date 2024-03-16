@@ -45,15 +45,6 @@ img.kris {
     color: #bc1a22;
 }
 
-.emailForm {
-    border-left: 3px solid #980D1C;
-    
-}
-
-.pic-container {
-    border-right: 3px solid #eed29bb1;
-}
-
 @media screen and (max-width: 1024px) {
     .input {
         margin-bottom: .5rem;

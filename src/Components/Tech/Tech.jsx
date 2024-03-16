@@ -7,10 +7,10 @@ const Techs = () => {
         <div id='Tech' className='bg-[#100607] pt-5 pb-5'>
             {/* small */}
             <main className='md:hidden flex flex-col'>
-                <h2 className='text-center text-3xl font-bold text-[#BC1021]'>Tech I Use</h2>
-                <section className='flex flex-row justify-evenly flex-wrap'>
+                <h2 className='text-center text-3xl font-bold text-[#eed29b]'>Tech I Use</h2>
+                <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id < 4 && (
-                        <article key={item.id} className='text-center'>
+                        <article key={item.id} className='text-center text-[#eed29b]'>
                             <a href={item.link} target='__blank'>
                                 <i className='text-7xl'>{item.icon}</i>
                                 <h3>{item.title}</h3>
@@ -18,9 +18,9 @@ const Techs = () => {
                         </article>
                     ))}
                 </section>
-                <section className='flex flex-row justify-evenly flex-wrap'>
+                <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id > 3 && item.id < 7 && (
-                        <article key={item.id} className='text-center'>
+                        <article key={item.id} className='text-center text-[#eed29b]'>
                             <a href={item.link} target='__blank'>
                                 <i className='text-7xl'>{item.icon}</i>
                                 <h3>{item.title}</h3>
@@ -28,9 +28,9 @@ const Techs = () => {
                         </article>
                     ))}
                 </section>
-                <section className='flex flex-row justify-evenly flex-wrap'>
+                <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id > 6 && item.id < 10 && (
-                        <article key={item.id} className='text-center'>
+                        <article key={item.id} className='text-center text-[#eed29b]'>
                             <a href={item.link} target='__blank'>
                                 <i className='text-7xl'>{item.icon}</i>
                                 <h3>{item.title}</h3>
@@ -38,9 +38,9 @@ const Techs = () => {
                         </article>
                     ))}
                 </section>
-                <section className='flex flex-row justify-evenly flex-wrap'>
+                <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id > 9 && (
-                        <article key={item.id} className='text-center'>
+                        <article key={item.id} className='text-center text-[#eed29b]'>
                             <a href={item.link} target='__blank'>
                                 <i className='text-7xl'>{item.icon}</i>
                                 <h3>{item.title}</h3>
