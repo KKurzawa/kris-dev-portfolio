@@ -1,4 +1,36 @@
 .work-pics {
-    border-radius:15px;
-    border: 1px solid gray;
+    border-radius:7px; 
+    filter: sepia(.9);
+    transition: 500ms ease-in-out;
+}
+
+
+.work-pics:hover {
+    border-radius:7px; 
+    filter: sepia(0);
+    transition: 500ms ease-in-out;
+}
+
+.work-pics-a {
+    border: 1px solid #980d1bb0;
+    border-radius: 7px;
+    transition: 500ms ease-in-out;
+}
+
+.work-pics-a:hover {
+    border: 1px solid rgba(245, 245, 245, 0.451);
+    border-radius: 7px;
+    box-shadow: 1px 1px 20px -5px rgba(245, 245, 245, 0.499);
+}
+
+.work-main {
+    border-bottom: 3px solid #980d1bc2;;
+}
+
+.git-repos {
+    transition: 500ms ease-in-out;  
+}
+
+.git-repos:hover {
+        color: #BC1021;  
 }

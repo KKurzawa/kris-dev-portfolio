@@ -1,9 +1,9 @@
 import './Home.css';
 import Work from '../../Components/Work/Work';
-import Skills from '../../Components/Skills/Skills';
-import Resume from '../../Components/Resume/Resume';
+// import Resume from '../../Components/Resume/Resume';
 import Contact from '../../Components/Contact/Contact';
 import About from '../../Components/About/About';
+import Techs from '../../Components/Tech/Tech';
 
 const Home = () => {
     return (
@@ -14,8 +14,8 @@ const Home = () => {
             <article className='work-container'>
                 <Work />
             </article>
-            <article className='skills-container'>
-                <Skills />
+            <article className='tech-container'>
+                <Techs />
             </article>
             {/* <article className='resume-container'>
                 <Resume />

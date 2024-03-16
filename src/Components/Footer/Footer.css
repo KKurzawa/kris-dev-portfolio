@@ -3,6 +3,22 @@
 	        animation: footer 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+.social-icons,
+.top-link,
+.mailto-link,
+.phone-link,
+.webdev-link {
+  transition: 500ms ease-in-out;
+}
+
+.social-icons:hover,
+.top-link:hover:hover,
+.mailto-link:hover,
+.phone-link:hover,
+.webdev-link:hover {
+  color: #BC1021;
+}
+
 @-webkit-keyframes footer {
     0% {
       opacity: 0;

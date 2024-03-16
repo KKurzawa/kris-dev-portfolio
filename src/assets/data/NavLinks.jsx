@@ -6,8 +6,8 @@ export const Navlinks = [
     },
     {
         id: 2,
-        title: 'Skills',
-        link: '#Skills'
+        title: 'Tech',
+        link: '#Tech'
     },
     {
         id: 3,

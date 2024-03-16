@@ -5,3 +5,7 @@
   scroll-behavior: smooth;
   font-style: normal;
 }
+
+body {
+  background-color: #100607;
+}

@@ -1,0 +1,11 @@
+#Tech {
+    border-top: 3px solid #eed29b89;
+}
+
+.tech-icons-title {
+    transition: 500ms ease-in-out;
+}
+
+.tech-icons-title:hover {
+   color: #BC1021;
+}

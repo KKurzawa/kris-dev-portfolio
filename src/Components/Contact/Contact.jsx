@@ -50,18 +50,17 @@ const Contact = () => {
     return (
         <main id='Contact' className='flex flex-col items-center'>
             <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly h-[28rem]'>
-                <div className='bg-[#980D1C] w-[65%] h-[65%] lg:w-1/3 lg:h-[100%] flex flex-col justify-center items-center'>
+                <div className='pic-container bg-[#980D1C] w-[65%] h-[65%] lg:w-1/3 lg:h-[100%] flex flex-col justify-center items-center'>
                     <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto' />
-                    <div className='flex justify-evenly p-2 w-full'>
+                    <div className='flex justify-evenly p-2 w-full text-[#eed29b]'>
                         <button className='res-btn text-md'><a href='/KrisKurzawaResume.pdf' target='__blank'>View My Resume</a></button>
                         <button className='res-btn text-md'><a href='/MSUCertificateofCompletion.pdf' target='__blank'>View My Certificate</a></button>
                     </div>
 
                 </div>
 
-                <form onSubmit={handleSubmit} className='emailForm flex flex-col items-center lg:px-10 w-[65%] h-[65%] md:w-2/3 md:h-auto bg-[#eed29bb1]'>
-
-                    <article className='flex flex-col w-3/4 pt-10'>
+                <form onSubmit={handleSubmit} className='emailForm flex flex-col items-center lg:px-10 w-[65%] h-[65%] md:w-2/3 md:h-auto bg-[#eed29beb]'>
+                    <article className='flex flex-col w-3/4 pt-5'>
                         <h2 className="text-3xl font-bold lg:text-3xl text-[#100607] w-3/4">Drop Me A Line</h2>
                         <input
                             className='input'
@@ -87,19 +86,17 @@ const Contact = () => {
                         <textarea
                             className='input'
                             cols='30'
-                            rows='3'
+                            rows='5'
                             placeholder='Message'
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         >
                         </textarea>
-                        <button className='submit-btn w-32 lg:w-32' type='submit'>Submit</button>
+                        <button className='submit-btn bg-[#100607] w-32 lg:w-32' type='submit'>Submit</button>
                     </article>
-
-
                     {errorMessage && (
                         <article>
-                            <p className="error-tex text-center text-2xl lg:text-4xl mb-5">{errorMessage}</p>
+                            <p className="error-tex text-center text-xl lg:text-2xl mb-5">{errorMessage}</p>
                         </article>
                     )}
                 </form>
