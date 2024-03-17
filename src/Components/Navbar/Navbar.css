@@ -3,6 +3,9 @@
 	        animation: navbar 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+.kurzawa {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 @-webkit-keyframes navbar {
     0% {
       opacity: 0;

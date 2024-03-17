@@ -7,7 +7,7 @@ const Work = () => {
     return (
         <main className='work-main bg-[#100607] pt-5 md:pt-10 pb-10 border-t-[3px] md:border-t-0 border-t-[#eed29b89]'>
             <header id='Work' className='flex flex-col items-center'>
-                <h1 className='text-3xl font-bold text-[#eed29b]'>Work</h1>
+                <h1 className=' work-header text-3xl text-[#eed29b]'>Work</h1>
             </header>
             <div>
                 {/* small and medium */}

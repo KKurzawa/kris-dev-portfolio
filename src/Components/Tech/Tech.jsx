@@ -4,10 +4,10 @@ import './Tech.css';
 
 const Techs = () => {
     return (
-        <div id='Tech' className='bg-[#100607] pt-5 pb-5'>
+        <div id='Tech' className='bg-[#100607] pt-5 pb-5 '>
             {/* small */}
             <main className='md:hidden flex flex-col'>
-                <h2 className='text-center text-3xl font-bold text-[#eed29b]'>Tech I Use</h2>
+                <h2 className='tech-header text-center text-3xl font-bold text-[#eed29b]'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id < 4 && (
                         <article key={item.id} className='text-center text-[#eed29b]'>

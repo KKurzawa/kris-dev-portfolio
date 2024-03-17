@@ -48,7 +48,7 @@ const Contact = () => {
     }
 
     return (
-        <main id='Contact' className='flex flex-col items-center'>
+        <main id='Contact' className='flex flex-col items-center border-b-[2px] md:border-b-0 border-b-[#841f29] border-t-[1px] md:border-t-0 border-[#eed29ba8]'>
             <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly h-fit md:h-[28rem]'>
                 <div className='pic-container md:border-r-[3px] md:border-[#eed29be6] bg-[#980D1C] w-full h-full md:w-1/3 md:h-[100%] flex flex-col justify-center items-center'>
                     <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto mt-6 md:mt-0' />
