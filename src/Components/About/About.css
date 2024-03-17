@@ -1,7 +1,13 @@
-.kk-text {
+.kris-text {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-	        animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+    -webkit-animation: kris-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+	        animation: kris-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+}
+
+.kurzawa-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-animation: kurzawa-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+	        animation: kurzawa-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
 }
 
 .hello {
@@ -36,20 +42,71 @@
 
 @-webkit-keyframes fade-in {
     0% {
-      opacity: 0;
+      color: #980D1C
     }
     100% {
-      opacity: 1;
+      color: whitesmoke;
     }
   }
   @keyframes fade-in {
     0% {
-      opacity: 0;
+        color: #980D1C
+      }
+      100% {
+        color: whitesmoke;
+      }
     }
-    100% {
-      opacity: 1;
-    }
-  }
+
+    @-webkit-keyframes kris-fade-in {
+        0% {
+          color: #980D1C
+        }
+        100% {
+          color: #eed29be6;
+        }
+      }
+      @keyframes kris-fade-in {
+        0% {
+            color: #980D1C
+          }
+          100% {
+            color: #eed29be6;
+          }
+        }
+
+            @-webkit-keyframes kris-fade-in {
+        0% {
+          color: #980D1C
+        }
+        100% {
+          color: #100607;
+        }
+      }
+      @keyframes kris-fade-in {
+        0% {
+            color: #980D1C
+          }
+          100% {
+            color: #100607;
+          }
+        }
+
+        @-webkit-keyframes kurzawa-fade-in {
+            0% {
+              color: #980D1C
+            }
+            100% {
+              color: #eed29be6;
+            }
+          }
+          @keyframes kurzawa-fade-in {
+            0% {
+                color: #980D1C
+              }
+              100% {
+                color: #eed29be6;
+              }
+            }
 
   @-webkit-keyframes about-fade-in {
     0% {

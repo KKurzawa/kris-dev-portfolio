@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
+import NavbarMobile from './Components/NavbarMobile/NavbarMobile';
 import Footer from './Components/Footer/Footer';
 import Landing from './Components/Landing/Landing';
 import { Outlet } from 'react-router-dom';
@@ -19,6 +20,7 @@ const App = () => {
   }
   return (
     <>
+      <NavbarMobile />
       <Navbar />
       <Outlet />
       <Footer />
