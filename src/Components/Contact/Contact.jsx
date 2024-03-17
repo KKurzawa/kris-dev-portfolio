@@ -49,9 +49,9 @@ const Contact = () => {
 
     return (
         <main id='Contact' className='flex flex-col items-center'>
-            <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly h-[28rem]'>
-                <div className='pic-container md:border-r-[3px] md:border-[#eed29be6] bg-[#980D1C] w-[65%] h-[65%] lg:w-1/3 lg:h-[100%] flex flex-col justify-center items-center'>
-                    <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto' />
+            <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly h-fit md:h-[28rem]'>
+                <div className='pic-container md:border-r-[3px] md:border-[#eed29be6] bg-[#980D1C] w-full h-full md:w-1/3 md:h-[100%] flex flex-col justify-center items-center'>
+                    <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto mt-6 md:mt-0' />
                     <div className='flex justify-evenly p-2 w-full text-[#eed29b]'>
                         <button className='res-btn text-md'><a href='/KrisKurzawaResume.pdf' target='__blank'>View My Resume</a></button>
                         <button className='res-btn text-md'><a href='/MSUCertificateofCompletion.pdf' target='__blank'>View My Certificate</a></button>
@@ -59,8 +59,8 @@ const Contact = () => {
 
                 </div>
 
-                <form onSubmit={handleSubmit} className='emailForm md:border-l-[3px] md:border-[#980D1C] flex flex-col items-center lg:px-10 w-[65%] h-[65%] md:w-2/3 md:h-auto bg-[#eed29beb]'>
-                    <article className='flex flex-col w-3/4 pt-5'>
+                <form onSubmit={handleSubmit} className='emailForm md:border-l-[4px] md:border-[#980D1C] flex flex-col items-center lg:px-10 w-full h-fit md:w-2/3 md:h-auto bg-[#eed29beb]'>
+                    <article className='flex flex-col w-4/5 md:w-3/4 pt-5'>
                         <h2 className="text-3xl font-bold lg:text-3xl text-[#100607] w-3/4">Drop Me A Line</h2>
                         <input
                             className='input'
@@ -92,7 +92,7 @@ const Contact = () => {
                             onChange={(e) => setMessage(e.target.value)}
                         >
                         </textarea>
-                        <button className='submit-btn bg-[#100607] w-32 lg:w-32' type='submit'>Submit</button>
+                        <button className='submit-btn bg-[#100607] w-32 mb-5 md:mb-0 md:w-32' type='submit'>Submit</button>
                     </article>
                     {errorMessage && (
                         <article>
