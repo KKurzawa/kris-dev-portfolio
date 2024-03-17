@@ -4,7 +4,7 @@ import { icons } from '../../assets/data/SMIcons';
 const Footer = () => {
     const today = new Date();
     return (
-        <footer className='footer flex flex-col items-center bg-[#100607] text-[#eed29b]'>
+        <footer className='footer flex flex-col items-center bg-[#100607] text-[#eed29b] border-t-[1px] md:border-t-0 border-t-[#eed29ba8]'>
             <article className='flex'>
                 {icons.map((item) => (
                     <i key={item.id} className='social-icons text-xl p-3 lg:text-5xl lg:p-7'><a href={item.link} target='__blank'>{item.symbol}</a></i>

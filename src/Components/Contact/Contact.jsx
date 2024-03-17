@@ -48,7 +48,7 @@ const Contact = () => {
     }
 
     return (
-        <main id='Contact' className='flex flex-col items-center border-b-[2px] md:border-b-0 border-b-[#841f29] border-t-[1px] md:border-t-0 border-[#eed29ba8]'>
+        <main id='Contact' className='flex flex-col items-center border-b-[3px] md:border-b-0 border-b-[#841f29] border-t-[1px] md:border-t-0 border-t-[#eed29ba8]'>
             <article className='pic-form-container flex flex-col lg:items-none lg:flex lg:flex-row lg:justify-evenly h-fit md:h-[28rem]'>
                 <div className='pic-container md:border-r-[3px] md:border-[#eed29be6] bg-[#980D1C] w-full h-full md:w-1/3 md:h-[100%] flex flex-col justify-center items-center'>
                     <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto mt-6 md:mt-0' />
@@ -59,9 +59,9 @@ const Contact = () => {
 
                 </div>
 
-                <form onSubmit={handleSubmit} className='emailForm md:border-l-[4px] md:border-[#980D1C] flex flex-col items-center lg:px-10 w-full h-fit md:w-2/3 md:h-auto bg-[#eed29beb]'>
+                <form onSubmit={handleSubmit} className='emailForm border-t-[2px] md:border-t-0 border-t-[#841f29] md:border-l-[4px] md:border-[#980D1C] flex flex-col items-center lg:px-10 w-full h-fit md:w-2/3 md:h-auto bg-[#eed29beb]'>
                     <article className='flex flex-col w-4/5 md:w-3/4 pt-5'>
-                        <h2 className="text-3xl font-bold lg:text-3xl text-[#100607] w-3/4">Drop Me A Line</h2>
+                        <h2 className="text-3xl font-bold lg:text-3xl text-[#100607] w-3/4 pb-1">Drop Me A Line</h2>
                         <input
                             className='input'
                             type='text'
