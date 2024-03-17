@@ -11,7 +11,8 @@ const Footer = () => {
                 ))}
             </article>
             <article className='flex flex-col items-center text-sm md:text-md'>
-                <h2 className='top-link mb-1 md:mb-3'><a href='#navbar'>To The Top</a></h2>
+                <h2 className='top-link md:hidden mb-1 md:mb-3'><a href='#navbar-mobile'>To The Top</a></h2>
+                <h2 className='top-link hidden md:block mb-1 md:mb-3'><a href='#navbar'>To The Top</a></h2>
                 <h2 className='mailto-link mb-1 md:mb-3'> <a href='mailto:kurzawa1@yahoo.com'>Email Me</a></h2>
                 <h2 className='phone-link mb-1 md:mb-3'><a href='tel:2485682806'>Call Me</a></h2>
                 <p className='mb-1 md:mb-3'>Copyright &copy; {today.getFullYear()} Kriskurzawadev - All Rights Reserved</p>

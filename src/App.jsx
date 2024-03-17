@@ -19,12 +19,12 @@ const App = () => {
     return <Landing />;
   }
   return (
-    <>
+    <main className='main-app'>
       <NavbarMobile />
       <Navbar />
       <Outlet />
       <Footer />
-    </>
+    </main>
   )
 }
 

@@ -1,4 +1,4 @@
-#navbar {
+.navbar {
 	-webkit-animation: navbar 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: navbar 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
