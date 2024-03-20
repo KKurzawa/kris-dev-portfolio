@@ -12,10 +12,10 @@ const Work = () => {
             <div>
                 {/* small and medium */}
                 <h2 className='lg:hidden text-center text-2xl text-[#eed29b] pb-1'>Freelance Projects</h2>
-                <main className='lg:hidden flex flex-row justify-evenly text-sm md:text-[.6rem] pb-5'>
-                    <article className='work-container text-center text-[#eed29b]'>
+                <main className='lg:hidden flex flex-row justify-evenly text-sm md:text-[.6rem] pb-5 w-full'>
+                    <article className='work-container text-center w-5/12 text-[#eed29b]'>
                         {FreeScreenshots.map((item, index) => index % 2 === 0 && (
-                            <section key={item.id} className='pb-2'>
+                            <section key={item.id} className='w-full pb-2'>
                                 <h2>{item.title}</h2>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.siteLink, '_blank')
@@ -23,14 +23,14 @@ const Work = () => {
                                 </button>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.gitLink, '_blank')
-                                    , 500)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                    , 500)} className='git-repos flex justify-center w-full'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
                                 </button>
                             </section>
                         ))}
                     </article>
-                    <article className='work-container text-center text-[#eed29b]'>
+                    <article className='work-container text-center w-5/12 text-[#eed29b]'>
                         {FreeScreenshots.map((item, index) => index % 2 !== 0 && (
-                            <section key={item.id} className='pb-2'>
+                            <section key={item.id} className='w-full pb-2'>
                                 <h2>{item.title}</h2>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.siteLink, '_blank')
@@ -38,17 +38,17 @@ const Work = () => {
                                 </button>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.gitLink, '_blank')
-                                    , 500)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                    , 500)} className='git-repos flex justify-center w-full'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
                                 </button>
                             </section>
                         ))}
                     </article>
                 </main>
                 <h2 className='lg:hidden text-center text-2xl text-[#eed29b] pb-1'>Bootcamp Projects</h2>
-                <main className='lg:hidden flex flex-row justify-evenly text-sm md:text-[.6rem]'>
-                    <article className='work-container text-center text-[#eed29b]'>
+                <main className='lg:hidden flex flex-row justify-evenly text-sm md:text-[.6rem] w-full'>
+                    <article className='work-container text-center text-[#eed29b] w-5/12'>
                         {BootScreenshots.map((item, index) => index % 2 === 0 && (
-                            <section key={item.id} className='pb-2'>
+                            <section key={item.id} className='w-full pb-2'>
                                 <h2>{item.title}</h2>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.siteLink, '_blank')
@@ -56,14 +56,14 @@ const Work = () => {
                                 </button>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.gitLink, '_blank')
-                                    , 500)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                    , 500)} className='git-repos flex justify-center w-full'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
                                 </button>
                             </section>
                         ))}
                     </article>
-                    <article className='work-container text-center text-[#eed29b]'>
+                    <article className='work-container text-center text-[#eed29b] w-5/12'>
                         {BootScreenshots.map((item, index) => index % 2 !== 0 && (
-                            <section key={item.id} className='pb-2'>
+                            <section key={item.id} className='pb-2 w-full'>
                                 <h2>{item.title}</h2>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.siteLink, '_blank')
@@ -71,7 +71,7 @@ const Work = () => {
                                 </button>
                                 <button onClick={() => setTimeout(() =>
                                     window.open(item.gitLink, '_blank')
-                                    , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                    , 750)} className='git-repos flex justify-center w-full'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
                                 </button>
                             </section>
                         ))}
