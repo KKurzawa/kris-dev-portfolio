@@ -2,6 +2,7 @@ import './Navbar.css';
 import { Navlinks } from '../../assets/data/NavLinks';
 
 const Navbar = () => {
+
     return (
         <main id='navbar' className='bg-[#100607]'>
             <nav className='hidden h-32 md:flex'>
@@ -9,9 +10,9 @@ const Navbar = () => {
                     <h1 className='kurzawa text-[#980D1C] text-2xl md:text-6xl'>KURZAWA</h1>
                     <h2 className='text-[#eed29b] text-3xl'>DEVELOPMENT</h2>
                 </header>
-                <ol className='flex justify-evenly h-full items-end w-2/3'>
+                <ol className='nav-link-container flex justify-evenly h-full items-end w-2/3'>
                     {Navlinks.map((item) => (
-                        <li key={item.id} className='text-[#eed29b] text-3xl pb-4'>
+                        <li key={item.id} onClick='' className='nav-link text-[#eed29b] text-3xl mb-4'>
                             <a href={item.link} className=''>
                                 {item.title}
                             </a>

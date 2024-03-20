@@ -17,14 +17,22 @@ const Work = () => {
                         {FreeScreenshots.map((item, index) => index % 2 === 0 && (
                             <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
-                                <a href={item.siteLink} target='__blank' className=''>
+                                {/* <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='work-pics w-44' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
                                         <i className='flex items-center justify-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
                                     </a>
-                                </section>
+                                </section> */}
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.siteLink, '_blank')
+                                    , 750)} ><img src={item.image} className='work-pics-a my-1 w-44 work-pics' />
+                                </button>
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.gitLink, '_blank')
+                                    , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                </button>
                             </section>
                         ))}
                     </article>
@@ -32,14 +40,22 @@ const Work = () => {
                         {FreeScreenshots.map((item, index) => index % 2 !== 0 && (
                             <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
-                                <a href={item.siteLink} target='__blank' className=''>
+                                {/* <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='w-44 work-pics' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
                                         <i className='flex items-center justify-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
                                     </a>
-                                </section>
+                                </section> */}
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.siteLink, '_blank')
+                                    , 750)} ><img src={item.image} className='work-pics-a my-1 w-44 work-pics' />
+                                </button>
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.gitLink, '_blank')
+                                    , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                </button>
                             </section>
                         ))}
                     </article>
@@ -50,14 +66,22 @@ const Work = () => {
                         {BootScreenshots.map((item, index) => index % 2 === 0 && (
                             <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
-                                <a href={item.siteLink} target='__blank' className=''>
+                                {/* <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='w-44 work-pics' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank' >
                                         <i className='flex items-center justify-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
                                     </a>
-                                </section>
+                                </section> */}
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.siteLink, '_blank')
+                                    , 750)} ><img src={item.image} className='work-pics-a my-1 w-44 work-pics' />
+                                </button>
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.gitLink, '_blank')
+                                    , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                </button>
                             </section>
                         ))}
                     </article>
@@ -65,14 +89,22 @@ const Work = () => {
                         {BootScreenshots.map((item, index) => index % 2 !== 0 && (
                             <section key={item.id} className='pb-2'>
                                 <h2>{item.title}</h2>
-                                <a href={item.siteLink} target='__blank' className=''>
+                                {/* <a href={item.siteLink} target='__blank' className=''>
                                     <LazyLoadImage src={item.image} alt={item.title} className='w-44 work-pics' />
                                 </a>
                                 <section className=''>
                                     <a href={item.gitLink} target='__blank'>
                                         <i className='flex items-center justify-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
                                     </a>
-                                </section>
+                                </section> */}
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.siteLink, '_blank')
+                                    , 750)} ><img src={item.image} className='work-pics-a my-1 w-44 work-pics' />
+                                </button>
+                                <button onClick={() => setTimeout(() =>
+                                    window.open(item.gitLink, '_blank')
+                                    , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                                </button>
                             </section>
                         ))}
                     </article>
@@ -80,18 +112,30 @@ const Work = () => {
             </div>
             {/* large */}
             <h2 className='hidden lg:block text-center text-2xl pb-3 text-[#eed29b]'>Freelance Projects</h2>
+
             <main className='hidden lg:flex text-md justify-evenly pb-5'>
                 {FreeScreenshots.map((item) => (
                     <article key={item.id} className='work-container flex flex-col justify-center items-center text-[#eed29b]'>
                         <h2>{item.title}</h2>
-                        <a href={item.siteLink} target='__blank' className='work-pics-a my-1'>
+                        {/* <a href={item.siteLink} target='__blank' className='work-pics-a my-1'>
                             <LazyLoadImage src={item.image} alt={item.title} className='w-64 work-pics' />
                         </a>
                         <section className=''>
                             <a href={item.gitLink} target='__blank' className='git-repos'>
                                 <i className='flex items-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
                             </a>
-                        </section>
+                        </section> */}
+                        <button onClick={() => setTimeout(() =>
+                            window.open(item.siteLink, '_blank')
+                            , 750)} ><img src={item.image} className='work-pics-a my-1 w-64 work-pics' />
+                        </button>
+                        <button onClick={() => setTimeout(() =>
+                            window.open(item.gitLink, '_blank')
+                            , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                        </button>
+                        {/* <a href={item.gitLink} target='__blank' className='git-repos'>
+                            <i className='flex items-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
+                        </a> */}
                     </article>
                 ))}
             </main>
@@ -99,7 +143,7 @@ const Work = () => {
             <main className='hidden lg:flex text-md justify-evenly'>
                 {BootScreenshots.map((item) => (
                     <article key={item.id} className='work-container flex flex-col justify-center items-center text-[#eed29b]'>
-                        <h2>{item.title}</h2>
+                        {/* <h2>{item.title}</h2>
                         <a href={item.siteLink} target='__blank' className='work-pics-a my-1'>
                             <LazyLoadImage src={item.image} alt={item.title} className='w-64 work-pics' />
                         </a>
@@ -107,7 +151,15 @@ const Work = () => {
                             <a href={item.gitLink} target='__blank' className='git-repos'>
                                 <i className='flex items-center'><FaGithub /><h3 className='normal'>&nbsp; Repository</h3></i>
                             </a>
-                        </section>
+                        </section> */}
+                        <button onClick={() => setTimeout(() =>
+                            window.open(item.siteLink, '_blank')
+                            , 750)} ><img src={item.image} className='work-pics-a my-1 w-64 work-pics' />
+                        </button>
+                        <button onClick={() => setTimeout(() =>
+                            window.open(item.gitLink, '_blank')
+                            , 750)} className='git-repos'><i className='flex items-center'><FaGithub /><span>&nbsp;Repo</span></i>
+                        </button>
                     </article>
                 ))}
             </main>
