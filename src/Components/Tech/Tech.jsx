@@ -10,7 +10,7 @@ const Techs = () => {
                 <h2 className='tech-header text-center text-3xl font-bold text-[#eed29b]'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id < 4 && (
-                        <article key={item.id} className='text-center text-[#eed29b]'>
+                        <article key={item.id} className='tech-icons-title text-center text-[#eed29b]'>
                             <button onClick={() => setTimeout(() =>
                                 window.open(item.link, '_blank')
                                 , 500)} ><i className='text-7xl'>{item.icon}</i>
@@ -21,7 +21,7 @@ const Techs = () => {
                 </section>
                 <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id > 3 && item.id < 7 && (
-                        <article key={item.id} className='text-center text-[#eed29b]'>
+                        <article key={item.id} className='tech-icons-title text-center text-[#eed29b]'>
                             <button onClick={() => setTimeout(() =>
                                 window.open(item.link, '_blank')
                                 , 500)} ><i className='text-7xl'>{item.icon}</i>
@@ -32,7 +32,7 @@ const Techs = () => {
                 </section>
                 <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id > 6 && item.id < 10 && (
-                        <article key={item.id} className='text-center text-[#eed29b]'>
+                        <article key={item.id} className='tech-icons-title text-center text-[#eed29b]'>
                             <button onClick={() => setTimeout(() =>
                                 window.open(item.link, '_blank')
                                 , 500)} ><i className='text-7xl'>{item.icon}</i>
@@ -43,7 +43,7 @@ const Techs = () => {
                 </section>
                 <section className='flex flex-row justify-evenly flex-wrap py-2'>
                     {Tech.map((item) => item.id > 9 && (
-                        <article key={item.id} className='text-center text-[#eed29b]'>
+                        <article key={item.id} className='tech-icons-title text-center text-[#eed29b]'>
                             <button onClick={() => setTimeout(() =>
                                 window.open(item.link, '_blank')
                                 , 500)} ><i className='text-7xl'>{item.icon}</i>
@@ -56,7 +56,7 @@ const Techs = () => {
             </main>
             {/* md and lg */}
             <main className='hidden md:flex flex-col pb-10'>
-                <h2 className='text-center text-3xl font-bold pb-3 text-[#eed29b]'>Tech I Use</h2>
+                <h2 className='tech-header text-center text-3xl font-bold pb-3 text-[#eed29b]'>Tech I Use</h2>
                 <section className='flex flex-row justify-evenly flex-wrap pb-16'>
                     {Tech.map((item) => item.id < 7 && (
                         <article key={item.id} className='tech-icons-title text-center text-[#eed29b]'>

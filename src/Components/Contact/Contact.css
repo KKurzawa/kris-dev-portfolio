@@ -1,3 +1,7 @@
+.drop-me-a-line {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .input:focus {
     outline:none;
     border: 1px solid #971522;
@@ -24,6 +28,27 @@
 img.kris {
     border: 1px solid gray;
     border-radius: 5px;
+}
+
+.res-btn {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.res-btn:after,
+.res-btn:before {
+  display:block;
+  content: '';
+  width: inherit;
+  border: solid 1px;  
+  transform: scale(0);  
+  transition: 500ms ease-in-out;
+}
+
+.res-btn:hover:after,
+.res-btn:hover:before { 
+  transform: scale(1);
+  border: solid .5px #eed29b;
 }
 
 .submit-btn {
