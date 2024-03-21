@@ -10,8 +10,8 @@
 }
 
 .fade-out{
-  -webkit-animation: fade-out 1s ease-out 5s both;
-  animation: fade-out 1s ease-out 5s both;
+  -webkit-animation: fade-out 1s ease-out 4s both;
+  animation: fade-out 1s ease-out 4s both;
   height:auto;
   width: 45vw;
   display: flex;
