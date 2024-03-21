@@ -1,19 +1,21 @@
-/* md and lg  */
+
+
 .logo {
     height:auto;
-    animation: logo 4s ease-in both;
+    animation: logo 3s ease-in both;
 }
 
 .logo-text {
-  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
-	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.5s both;
+  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
 }
 
-.fade-out{
+.fade-out,
+.landing-main-container {
   -webkit-animation: fade-out 1s ease-out 4s both;
   animation: fade-out 1s ease-out 4s both;
   height:auto;
-  width: 45vw;
+  /* width: 45vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +80,7 @@
 @media screen and (max-width: 1024px) {
   .logo {
     height:auto;
-    animation: logo 4s ease-in both;
+    animation: logo 3s ease-in both;
 }
   @keyframes logo {
     from {
@@ -111,11 +113,12 @@
         animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
 }
 
-.sm-fade-out{
--webkit-animation: fade-out 1s ease-out 4s both;
-animation: fade-out 1s ease-out 4s both;
+.sm-fade-out,
+.sm-landing-main-container{
+-webkit-animation: fade-out 1s ease-out 3.5s both;
+animation: fade-out 1s ease-out 3.5s both;
 height:auto;
-width: 80vw;
+/* width: 80vw; */
 display: flex;
 flex-direction: column;
 justify-content: center;
