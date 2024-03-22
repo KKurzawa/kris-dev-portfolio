@@ -1,26 +1,55 @@
-
+/* md and large */
+.fade-out,
+.landing-main-container {
+  -webkit-animation: fade-out 1s ease-out 4.5s both;
+  animation: fade-out 1s ease-out 4.5s both;
+}
 
 .logo {
     height:auto;
-    animation: logo 3s ease-in both;
+    -webkit-animation: logo 3s cubic-bezier(0, 0, 1, 1) both;
+    animation: logo 3s cubic-bezier(0, 0, 1, 1) both;
 }
 
 .logo-text {
-  -webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-	        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+  -webkit-animation: logo-text 1.5s cubic-bezier(0, 0, 1, 1) 3s both;
+	        animation: logo-text 1.5s cubic-bezier(0, 0, 1, 1) 3s both;
+          color: var(--yellow-color-one);
 }
 
-.fade-out,
-.landing-main-container {
-  -webkit-animation: fade-out 1s ease-out 4s both;
-  animation: fade-out 1s ease-out 4s both;
-  height:auto;
-  /* width: 45vw; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+  @keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+
+@keyframes logo {
+  from {
+     width: 0;      
+  }
+  to {
+    width: 25rem;
+  }
+}
+
+@keyframes logo {
+  from {
+      width: 0;      
+  }
+   to {
+    width: 25rem;
+  }
 }
 
 @-webkit-keyframes logo-text {
@@ -40,91 +69,42 @@
   }
 }
 
-@keyframes logo {
-  from {
-     width: 0;      
-  }
-  to {
-    width: 40rem;
-  }
-}
-
-@keyframes logo {
-  from {
-      width: 0;      
-  }
-   to {
-    width: 40rem;
-  }
-}
-
-  
-
-@-webkit-keyframes fade-out {
-0% {
-  opacity: 1;
-}
-100% {
-  opacity: 0;
-}
-}
-@keyframes fade-out {
-0% {
-  opacity: 1;
-}
-100% {
-  opacity: 0;
-}
-}
-
-@media screen and (max-width: 1024px) {
-  .logo {
-    height:auto;
-    animation: logo 3s ease-in both;
-}
-  @keyframes logo {
-    from {
-       width: 0;      
-    }
-    to {
-      width: 100rem;
-    }
-    }
-  
-    @keyframes logo {
-      from {
-         width: 0;      
-      }
-      to {
-        width: 100rem;
-      }
-      }
-}
-
 /* sm */
-
-.sm-logo {
-  height:auto;
-  animation: logo 8s ease-in both;
-}
-
-.sm-logo-text {
--webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-}
 
 .sm-fade-out,
 .sm-landing-main-container{
 -webkit-animation: fade-out 1s ease-out 3.5s both;
 animation: fade-out 1s ease-out 3.5s both;
-height:auto;
-/* width: 80vw; */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center;
 }
+
+.sm-logo {
+  height:auto;
+  -webkit-animation: sm-logo 4s ease-in-out both;
+  animation: sm-logo 4s ease-in-out both;
+}
+
+.sm-logo-text {
+-webkit-animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+        animation: logo-text 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+  color: var(--yellow-color-one);
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  }
+  }
+  @keyframes fade-out {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  }
+  }
 
 @-webkit-keyframes sm-logo-text {
 0% {
@@ -148,7 +128,7 @@ from {
    width: 0;      
 }
 to {
-  width: 80rem;
+  width: 15rem;
 }
 }
 
@@ -157,49 +137,7 @@ from {
     width: 0;      
 }
  to {
-  width: 80rem;
+  width: 15rem;
 }
 }
 
-
-
-@-webkit-keyframes fade-out {
-0% {
-opacity: 1;
-}
-100% {
-opacity: 0;
-}
-}
-@keyframes fade-out {
-0% {
-opacity: 1;
-}
-100% {
-opacity: 0;
-}
-}
-
-@media screen and (max-width: 1024px) {
-.logo {
-  height:auto;
-  animation: logo 4s ease-in both;
-}
-@keyframes logo {
-  from {
-     width: 0;      
-  }
-  to {
-    width: 100rem;
-  }
-  }
-
-  @keyframes logo {
-    from {
-       width: 0;      
-    }
-    to {
-      width: 100rem;
-    }
-    }
-}
