@@ -1,11 +1,20 @@
+.about-main {
+  border-color: var(--yellow-color-two);
+}
+
+.welcome-message {
+  background-color: var(--red-color-one);
+  border-color: var(--yellow-color-one);
+}
+
 .kris-text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--impact-font);
     -webkit-animation: kris-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
 	        animation: kris-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
 }
 
 .kurzawa-text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--impact-font);
     -webkit-animation: kurzawa-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
 	        animation: kurzawa-fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
 }
@@ -35,6 +44,13 @@
 	        animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
 }
 
+.about {
+  background-color: var(--yellow-color-one);
+  border-left-color: var(--red-color-one);
+  border-bottom-color: var(--red-color-one);
+  border-top-color: var(--red-color-two);
+}
+
 .about-text {
     -webkit-animation: about-fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.75s both;
     animation: about-fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3.75s both;
@@ -42,69 +58,52 @@
 
 @-webkit-keyframes fade-in {
     0% {
-      color: #980D1C
+      color: var(--red-color-one)
     }
     100% {
-      color: whitesmoke;
+      color: var(--white-color);
     }
   }
   @keyframes fade-in {
     0% {
-        color: #980D1C
+        color: var(--red-color-one);
       }
       100% {
-        color: whitesmoke;
+        color: var(--white-color);
       }
     }
 
-    @-webkit-keyframes kris-fade-in {
-        0% {
-          color: #980D1C
-        }
-        100% {
-          color: #eed29be6;
-        }
-      }
-      @keyframes kris-fade-in {
-        0% {
-            color: #980D1C
-          }
-          100% {
-            color: #eed29be6;
-          }
-        }
-
             @-webkit-keyframes kris-fade-in {
         0% {
-          color: #980D1C
+          color: var(--red-color-one)
         }
         100% {
-          color: #100607;
+          color: var(--black-color);
         }
       }
       @keyframes kris-fade-in {
         0% {
-            color: #980D1C
+            color: var(--red-color-one)
           }
           100% {
-            color: #100607;
+            color: var(--black-color);
           }
         }
 
         @-webkit-keyframes kurzawa-fade-in {
             0% {
-              color: #980D1C
+              color: var(--red-color-one)
             }
             100% {
-              color: #eed29be6;
+              color: var(--yellow-color-one);
             }
           }
           @keyframes kurzawa-fade-in {
             0% {
-                color: #980D1C
+                color: var(--red-color-one)
               }
               100% {
-                color: #eed29be6;
+                color: var(--yellow-color-one);
               }
             }
 
