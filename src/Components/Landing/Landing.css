@@ -1,8 +1,8 @@
 /* md and large */
 .fade-out,
 .landing-main-container {
-  -webkit-animation: fade-out 1s ease-out 4.5s both;
-  animation: fade-out 1s ease-out 4.5s both;
+  -webkit-animation: fade-out 1s ease-out 5s both;
+  animation: fade-out 1s ease-out 5s both;
 }
 
 .logo {
@@ -76,8 +76,8 @@
 
 .sm-fade-out,
 .sm-landing-main-container{
--webkit-animation: fade-out 1s ease-out 4s both;
-animation: fade-out 1s ease-out 4s both;
+-webkit-animation: fade-out 1s ease-out 5s both;
+animation: fade-out 1s ease-out 5s both;
 }
 
 .sm-logo {
