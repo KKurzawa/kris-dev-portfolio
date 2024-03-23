@@ -9,7 +9,7 @@ const Work = () => {
             <header id='Work' className='flex flex-col items-center'>
                 <h1 className='work-header text-3xl'>Work</h1>
             </header>
-            <div>
+            <section>
                 {/* small */}
                 <h2 className='projects-header md:hidden text-center text-2xl pb-1'>Freelance Projects</h2>
                 <main className='md:hidden flex flex-row justify-evenly w-full pb-5 text-sm md:text-[.6rem]'>
@@ -77,7 +77,7 @@ const Work = () => {
                         ))}
                     </article>
                 </main>
-            </div>
+            </section>
             {/* medium and large */}
             <h2 className='projects-header hidden md:block text-center pb-3 text-2xl'>Freelance Projects</h2>
             <main className='hidden md:flex justify-evenly pb-5 text-md lg:text-xl'>
