@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import { validateEmail } from '../../Utils/Helpers';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import KrisKurzawaPic from '/KrisKurzawa6.png';
-// import { icons } from '../../assets/data/SMIcons';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -44,7 +43,6 @@ const Contact = () => {
             .catch((error) => {
                 console.error('Error:', error)
             })
-        console.log(templateParams);
     }
 
     return (

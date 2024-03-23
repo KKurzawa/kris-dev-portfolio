@@ -1,5 +1,5 @@
 #Tech {
-    border-top: 3px solid #eed29b89;
+    border-top: 3px solid var(--yellow-color-two);
 }
 
 .tech-icons-title {
@@ -7,7 +7,7 @@
 }
 
 .tech-icons-title:hover {
-   color: #BC1021;
+   color: var(--red-color-three);
 }
 
 .tech-header {

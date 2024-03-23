@@ -1,30 +1,30 @@
+.work-main {
+    border-bottom: 3px solid var(--red-color-one);
+    border-top-color: var(--yellow-color-two);
+    background-color: var(--black-color);
+}
+
+.work-header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:var(--yellow-color-one)
+}
+
+.work-container,
+.projects-header {
+    color: var(--yellow-color-one)
+}
+
 .work-pics {
     border-radius:7px; 
+    border: 1px solid var(--red-color-one);
     filter: sepia(.9);
     transition: 500ms ease-in-out;
 }
 
-
 .work-pics:hover {
-    border-radius:7px; 
     filter: sepia(0);
-    transition: 500ms ease-in-out;
-}
-
-.work-pics-a {
-    border: 1px solid #980d1bb0;
-    border-radius: 7px;
-    transition: 500ms ease-in-out;
-}
-
-.work-pics-a:hover {
-    border: 1px solid rgba(245, 245, 245, 0.451);
-    border-radius: 7px;
-    box-shadow: 1px 1px 20px -5px rgba(245, 245, 245, 0.499);
-}
-
-.work-main {
-    border-bottom: 3px solid #980d1bc2;
+    border: 1px solid var(--gray-color);
+    box-shadow: 1px 1px 20px -5px var(--gray-color);
 }
 
 .git-repos {
@@ -32,9 +32,6 @@
 }
 
 .git-repos:hover {
-        color: #BC1021;  
+        color: var(--red-color-three);  
 }
 
-.work-header {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}

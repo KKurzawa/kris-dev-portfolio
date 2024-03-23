@@ -17,10 +17,12 @@
   /* colors */
   --red-color-one: #980D1C;
   --red-color-two: #841f29;
+  --red-color-three: #BC1021;
   --yellow-color-one: #eed29beb;
   --yellow-color-two: #eed29ba8;
   --white-color: whitesmoke;
   --black-color: #100607;
+  --gray-color: rgba(245, 245, 245, 0.451);
 
   /* fonts */
   --impact-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
