@@ -46,22 +46,22 @@ const Contact = () => {
     }
 
     return (
-        <main id='Contact' className='flex flex-col items-center border-b-[3px] md:border-b-0 border-b-[#841f29] border-t-[1px] md:border-t-0 border-t-[#eed29ba8]'>
+        <main id='contact' className='flex flex-col items-center border-b-[3px] md:border-b-0 border-t-[1px] md:border-t-0'>
             <article className='pic-form-container flex flex-col lg:items-none md:flex md:flex-row md:justify-evenly h-fit md:h-[28rem]'>
-                <div className='pic-container md:border-r-[3px] md:border-[#eed29be6] bg-[#980D1C] w-full h-full md:w-1/3 md:h-[100%] flex flex-col justify-center items-center'>
+                <section className='pic-container flex flex-col justify-center items-center w-full h-full md:w-1/3 md:h-[100%] md:border-r-[3px]'>
                     <LazyLoadImage src={KrisKurzawaPic} className='kris w-10/12 h-auto mt-6 md:mt-0' />
-                    <div className='flex justify-evenly p-2 w-full text-[#eed29b]'>
+                    <section className='flex justify-evenly p-2 w-full'>
                         <button onClick={() => setTimeout(() =>
                             window.open('/KrisKurzawaResume.pdf', '__blank')
-                            , 500)} className='res-btn text-md'>View My Resume</button>
+                            , 500)} className='res-cer-btn text-md'>View My Resume</button>
                         <button onClick={() => setTimeout(() =>
                             window.open('/MSUCertificateofCompletion.pdf', '__blank')
-                            , 500)} className='res-btn text-md'>View My Certificate</button>
-                    </div>
-                </div>
-                <form onSubmit={handleSubmit} className='emailForm border-t-[2px] md:border-t-0 border-t-[#841f29] md:border-l-[4px] md:border-[#980D1C] flex flex-col items-center lg:px-10 w-full h-fit md:w-2/3 md:h-full bg-[#eed29beb]'>
+                            , 500)} className='res-cer-btn text-md'>View My Certificate</button>
+                    </section>
+                </section>
+                <form onSubmit={handleSubmit} className='email-form flex flex-col items-center  w-full h-fit md:w-2/3 md:h-full lg:px-10 border-t-[2px] md:border-t-0 md:border-l-[4px]'>
                     <article className='flex flex-col w-4/5 md:w-3/4 pt-5'>
-                        <h2 className="drop-me-a-line text-3xl font-bold lg:text-3xl text-[#100607] w-3/4 pb-1">Drop Me A Line</h2>
+                        <h2 className="drop-me-a-line w-3/4 pb-1 text-3xl lg:text-3xl font-bold">Drop Me A Line</h2>
                         <input
                             className='input'
                             type='text'
@@ -92,12 +92,16 @@ const Contact = () => {
                             onChange={(e) => setMessage(e.target.value)}
                         >
                         </textarea>
-                        <button className='submit-btn bg-[#100607] w-32 mb-5 md:mb-0 md:w-32' type='submit'>Submit</button>
+                        <section className='hidden md:flex justify-between items-center'>
+                            <button className='submit-btn md:mb-0 md:w-32 bg-[#100607]' type='submit'>Submit</button>
+                            {errorMessage && (
+                                <p className="error-text text-xl lg:text-2xl">{errorMessage}</p>
+                            )}
+                        </section>
+                        <button className='md:hidden submit-btn w-32 mb-5 md:mb-0 md:w-32 bg-[#100607]' type='submit'>Submit</button>
                     </article>
                     {errorMessage && (
-                        <article>
-                            <p className="error-tex text-center text-xl lg:text-2xl mb-5">{errorMessage}</p>
-                        </article>
+                        <p className="error-text md:hidden text-center mb-5 text-xl lg:text-2xl">{errorMessage}</p>
                     )}
                 </form>
             </article>

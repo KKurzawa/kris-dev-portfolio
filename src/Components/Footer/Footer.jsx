@@ -4,10 +4,10 @@ import { icons } from '../../assets/data/SMIcons';
 const Footer = () => {
     const today = new Date();
     return (
-        <footer className='footer flex flex-col items-center bg-[#100607] text-[#eed29b] border-t-[1px] md:border-t-0 border-t-[#eed29ba8]'>
+        <footer className='footer flex flex-col items-center border-t-[1px] md:border-t-0'>
             <article className='flex'>
                 {icons.map((item) => (
-                    <i key={item.id} className='social-icons text-xl p-3 md:p-5 lg:text-5xl lg:p-7'><button onClick={() => setTimeout(() =>
+                    <i key={item.id} className='social-icons text-xl p-3 md:p-5 lg:p-7 lg:text-5xl '><button onClick={() => setTimeout(() =>
                         window.open(item.link, '_blank')
                         , 500)} >
                         {item.symbol}

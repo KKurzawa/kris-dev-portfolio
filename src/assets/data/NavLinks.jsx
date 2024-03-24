@@ -12,6 +12,6 @@ export const Navlinks = [
     {
         id: 3,
         title: 'Contact',
-        link: '#Contact'
+        link: '#contact'
     }
 ]
