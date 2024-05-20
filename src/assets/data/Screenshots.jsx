@@ -17,24 +17,24 @@ export const FreeScreenshots = [
     },
     {
         id: 2,
-        title: 'Ani Transcriptions',
-        image: Ani,
-        gitLink: 'https://github.com/KKurzawa/Ani-Difranco-Transcriptions',
-        siteLink: 'https://anidifrancotranscriptions.vercel.app/'
+        title: 'Revival: Allman Bros Tribute',
+        image: Revival,
+        gitLink: 'https://github.com/KKurzawa/revival-frontend2/tree/main',
+        siteLink: 'https://www.revivalbanddetroit.com/'
     },
     {
         id: 3,
-        title: 'Revival: Allman Bros Tribute',
-        image: Revival,
-        gitLink: 'https://github.com/KKurzawa/Revival-Site',
-        siteLink: 'https://revivalbanddetroit.vercel.app/'
-    },
-    {
-        id: 4,
         title: 'Audio Player',
         image: Audio,
         gitLink: 'https://github.com/KKurzawa/AudioPlayer',
         siteLink: 'https://audio-player-ten-eta.vercel.app/'
+    },
+    {
+        id: 4,
+        title: 'Ani Transcriptions',
+        image: Ani,
+        gitLink: 'https://github.com/KKurzawa/Ani-Difranco-Transcriptions',
+        siteLink: 'https://anidifrancotranscriptions.vercel.app/'
     },
 ]
 
