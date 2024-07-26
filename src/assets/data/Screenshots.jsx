@@ -1,7 +1,7 @@
 import Kris from '/KrisScreenshot.png';
 import Ani from '/AniScreenshot.png';
 import Revival from '/RevivalScreenshot.png';
-import Audio from '/AudioScreenshot.png';
+import LedDetroit from '/LedDetroitScreenshot.png';
 import Grocery from '/GroceryStoreManagementSystem.png';
 import Movies from '/MovieProject.png';
 import WeatherDashboard from '/WeatherDashboard.png'
@@ -24,10 +24,10 @@ export const FreeScreenshots = [
     },
     {
         id: 3,
-        title: 'Audio Player',
-        image: Audio,
-        gitLink: 'https://github.com/KKurzawa/AudioPlayer',
-        siteLink: 'https://audio-player-ten-eta.vercel.app/'
+        title: 'Led Detroit',
+        image: LedDetroit,
+        gitLink: 'https://github.com/KKurzawa/led-detroit',
+        siteLink: 'https://www.leddetroitband.com/'
     },
     {
         id: 4,
