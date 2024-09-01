@@ -5,6 +5,7 @@ import LedDetroit from '/LedDetroitScreenshot.png';
 import Grocery from '/GroceryStoreManagementSystem.png';
 import Movies from '/MovieProject.png';
 import WeatherDashboard from '/WeatherDashboard.png'
+import AbbeyRoad from '/AbbeyRoadScreenshot.png'
 import Portfolio from '/Portfolio.png'
 
 export const FreeScreenshots = [
@@ -31,10 +32,10 @@ export const FreeScreenshots = [
     },
     {
         id: 4,
-        title: 'Ani Transcriptions',
-        image: Ani,
-        gitLink: 'https://github.com/KKurzawa/Ani-Difranco-Transcriptions',
-        siteLink: 'https://anidifrancotranscriptions.vercel.app/'
+        title: 'The Abbey Road Project',
+        image: AbbeyRoad,
+        gitLink: 'https://github.com/KKurzawa/abbey-road-project/tree/main',
+        siteLink: 'https://www.abbeyroadproject.com/'
     },
 ]
 
