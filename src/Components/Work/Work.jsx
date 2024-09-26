@@ -92,7 +92,7 @@ const Work = () => {
                 </main>
             </section> */}
             {/* medium and large */}
-            <article className='hidden md:flex justify-evenly mb-10'>
+            <article className='hidden md:flex justify-evenly mb-5'>
                 {FreeScreenshots.map((item, index) => index < 3 && (
                     <section key={item.id} className='flex flex-col items-center w-[25%] gap-2'>
                         <h2>{item.title}</h2>
