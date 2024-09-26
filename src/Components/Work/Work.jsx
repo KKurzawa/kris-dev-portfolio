@@ -92,7 +92,7 @@ const Work = () => {
                 </main>
             </section> */}
             {/* medium and large */}
-            <article className='flex justify-evenly mb-10'>
+            <article className='hidden md:flex justify-evenly mb-10'>
                 {FreeScreenshots.map((item, index) => index < 3 && (
                     <section key={item.id} className='flex flex-col items-center w-[25%] gap-2'>
                         <h2>{item.title}</h2>
@@ -109,7 +109,7 @@ const Work = () => {
                 ))}
 
             </article>
-            <article className='flex justify-evenly'>
+            <article className='hidden md:flex justify-evenly'>
                 {FreeScreenshots.map((item, index) => index > 2 && (
                     <section key={item.id} className='flex flex-col items-center w-[25%] gap-2'>
                         <h2>{item.title}</h2>
