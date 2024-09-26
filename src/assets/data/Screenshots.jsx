@@ -1,5 +1,6 @@
 import Kris from '/KrisScreenshot.png';
-import Ani from '/AniScreenshot.png';
+// import Ani from '/AniScreenshot.png'; 
+import Tamara from '/TamaraScreenshot.png';
 import Revival from '/RevivalScreenshot.png';
 import LedDetroit from '/LedDetroitScreenshot.png';
 import Grocery from '/GroceryStoreManagementSystem.png';
@@ -11,27 +12,34 @@ import Portfolio from '/Portfolio.png'
 export const FreeScreenshots = [
     {
         id: 1,
+        title: 'Tamara Finlay',
+        image: Tamara,
+        gitLink: 'https://github.com/KKurzawa/tamara-finlay',
+        siteLink: 'https://www.tamarafinlay.com/'
+    },
+    {
+        id: 2,
         title: 'Kris Kurzawa Guitar',
         image: Kris,
         gitLink: 'https://github.com/KKurzawa/kris-kurzawa-guitar',
         siteLink: 'https://kris-kurzawa-guitar.vercel.app/'
     },
     {
-        id: 2,
+        id: 3,
         title: 'Revival: Allman Bros Tribute',
         image: Revival,
         gitLink: 'https://github.com/KKurzawa/revival-frontend2/tree/main',
         siteLink: 'https://www.revivalbanddetroit.com/'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Led Detroit',
         image: LedDetroit,
         gitLink: 'https://github.com/KKurzawa/led-detroit',
         siteLink: 'https://www.leddetroitband.com/'
     },
     {
-        id: 4,
+        id: 5,
         title: 'The Abbey Road Project',
         image: AbbeyRoad,
         gitLink: 'https://github.com/KKurzawa/abbey-road-project/tree/main',

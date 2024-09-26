@@ -28,6 +28,7 @@ img.kris {
   border: solid 1px;  
   transform: scale(0);  
   transition: 500ms ease-in-out;
+  border: solid .5px transparent;
 }
 
 .res-cer-btn:hover:after,
