@@ -36,7 +36,7 @@ export const icons = [
     {
         id: 6,
         symbol: <FaYoutube />,
-        link: 'https://www.youtube.com/channel/UCosE-h5XuXSkR4dG_hBaCUg'
+        link: 'https://www.youtube.com/@KrisCodesForYou'
     },
     {
         id: 7,
